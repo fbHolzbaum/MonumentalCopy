@@ -1,0 +1,454 @@
+fileFormatVersion: 2
+guid: 328eb6ee80debb9499bcf99bb6a920b0
+timeCreated: 1455748027
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: base
+    100002: chest
+    100004: face
+    100006: finger1L
+    100008: finger1L_end
+    100010: finger1R
+    100012: finger1R_end
+    100014: finger2L
+    100016: finger2L_end
+    100018: finger2R
+    100020: finger2R_end
+    100022: finger3L
+    100024: finger3L_end
+    100026: finger3R
+    100028: finger3R_end
+    100030: head
+    100032: head_end
+    100034: hipL
+    100036: hipL.001
+    100038: lowerArmL
+    100040: lowerArmR
+    100042: lowerBody
+    100044: lowerLegL
+    100046: lowerLegL_end
+    100048: lowerLegR
+    100050: lowerLegR_end
+    100052: shoulderL
+    100054: shoulderR
+    100056: stomach
+    100058: upperArmL
+    100060: upperArmR
+    100062: upperBody
+    100064: upperLegL
+    100066: upperLegR
+    100068: //RootNode
+    100070: zenonArmature
+    400000: base
+    400002: chest
+    400004: face
+    400006: finger1L
+    400008: finger1L_end
+    400010: finger1R
+    400012: finger1R_end
+    400014: finger2L
+    400016: finger2L_end
+    400018: finger2R
+    400020: finger2R_end
+    400022: finger3L
+    400024: finger3L_end
+    400026: finger3R
+    400028: finger3R_end
+    400030: head
+    400032: head_end
+    400034: hipL
+    400036: hipL.001
+    400038: lowerArmL
+    400040: lowerArmR
+    400042: lowerBody
+    400044: lowerLegL
+    400046: lowerLegL_end
+    400048: lowerLegR
+    400050: lowerLegR_end
+    400052: shoulderL
+    400054: shoulderR
+    400056: stomach
+    400058: upperArmL
+    400060: upperArmR
+    400062: upperBody
+    400064: upperLegL
+    400066: upperLegR
+    400068: //RootNode
+    400070: zenonArmature
+    4300000: lowerBody
+    4300002: face
+    4300004: upperBody
+    7400000: standing
+    7400002: standing
+    7400004: startWalk
+    7400006: walk
+    9500000: //RootNode
+    13700000: face
+    13700002: lowerBody
+    13700004: upperBody
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: standing
+      takeName: zenonArmature|zenonArmatureAction
+      firstFrame: 1
+      lastFrame: 5
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: face
+        weight: 1
+      - path: lowerBody
+        weight: 1
+      - path: upperBody
+        weight: 1
+      - path: zenonArmature
+        weight: 1
+      - path: zenonArmature/base
+        weight: 1
+      - path: zenonArmature/base/hipL
+        weight: 1
+      - path: zenonArmature/base/hipL/upperLegL
+        weight: 1
+      - path: zenonArmature/base/hipL/upperLegL/lowerLegL
+        weight: 1
+      - path: zenonArmature/base/hipL/upperLegL/lowerLegL/lowerLegL_end
+        weight: 1
+      - path: zenonArmature/base/hipL.001
+        weight: 1
+      - path: zenonArmature/base/hipL.001/upperLegR
+        weight: 1
+      - path: zenonArmature/base/hipL.001/upperLegR/lowerLegR
+        weight: 1
+      - path: zenonArmature/base/hipL.001/upperLegR/lowerLegR/lowerLegR_end
+        weight: 1
+      - path: zenonArmature/base/stomach
+        weight: 1
+      - path: zenonArmature/base/stomach/chest
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/head
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/head/head_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger1L
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger1L/finger1L_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger2L
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger2L/finger2L_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger3L
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger3L/finger3L_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger1R
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger1R/finger1R_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger2R
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger2R/finger2R_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger3R
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger3R/finger3R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: startWalk
+      takeName: zenonArmature|zenonArmatureAction
+      firstFrame: 10
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: face
+        weight: 1
+      - path: lowerBody
+        weight: 1
+      - path: upperBody
+        weight: 1
+      - path: zenonArmature
+        weight: 1
+      - path: zenonArmature/base
+        weight: 1
+      - path: zenonArmature/base/hipL
+        weight: 1
+      - path: zenonArmature/base/hipL/upperLegL
+        weight: 1
+      - path: zenonArmature/base/hipL/upperLegL/lowerLegL
+        weight: 1
+      - path: zenonArmature/base/hipL/upperLegL/lowerLegL/lowerLegL_end
+        weight: 1
+      - path: zenonArmature/base/hipL.001
+        weight: 1
+      - path: zenonArmature/base/hipL.001/upperLegR
+        weight: 1
+      - path: zenonArmature/base/hipL.001/upperLegR/lowerLegR
+        weight: 1
+      - path: zenonArmature/base/hipL.001/upperLegR/lowerLegR/lowerLegR_end
+        weight: 1
+      - path: zenonArmature/base/stomach
+        weight: 1
+      - path: zenonArmature/base/stomach/chest
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/head
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/head/head_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger1L
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger1L/finger1L_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger2L
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger2L/finger2L_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger3L
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger3L/finger3L_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger1R
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger1R/finger1R_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger2R
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger2R/finger2R_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger3R
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger3R/finger3R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: zenonArmature|zenonArmatureAction
+      firstFrame: 15
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: face
+        weight: 1
+      - path: lowerBody
+        weight: 1
+      - path: upperBody
+        weight: 1
+      - path: zenonArmature
+        weight: 1
+      - path: zenonArmature/base
+        weight: 1
+      - path: zenonArmature/base/hipL
+        weight: 1
+      - path: zenonArmature/base/hipL/upperLegL
+        weight: 1
+      - path: zenonArmature/base/hipL/upperLegL/lowerLegL
+        weight: 1
+      - path: zenonArmature/base/hipL/upperLegL/lowerLegL/lowerLegL_end
+        weight: 1
+      - path: zenonArmature/base/hipL.001
+        weight: 1
+      - path: zenonArmature/base/hipL.001/upperLegR
+        weight: 1
+      - path: zenonArmature/base/hipL.001/upperLegR/lowerLegR
+        weight: 1
+      - path: zenonArmature/base/hipL.001/upperLegR/lowerLegR/lowerLegR_end
+        weight: 1
+      - path: zenonArmature/base/stomach
+        weight: 1
+      - path: zenonArmature/base/stomach/chest
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/head
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/head/head_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger1L
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger1L/finger1L_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger2L
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger2L/finger2L_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger3L
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderL/upperArmL/lowerArmL/finger3L/finger3L_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger1R
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger1R/finger1R_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger2R
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger2R/finger2R_end
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger3R
+        weight: 1
+      - path: zenonArmature/base/stomach/chest/shoulderR/upperArmR/lowerArmR/finger3R/finger3R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: base
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,12 +4,13 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
     private LayerMask floorLayer; //The name of the layer affected by raycast
-    private bool moveOn = false; //When this variable is on the player starts moving
     Vector3 targetPosition; //positoin is determined by raycast and the player walks towards this ^position
+    NavMeshAgent navAgent;
 
     void Start()
     {
         floorLayer = LayerMask.NameToLayer("Floor");
+        navAgent = GetComponent<NavMeshAgent>();
     }
 
 	// Update is called once per frame
@@ -24,23 +25,21 @@ public class PlayerMovement : MonoBehaviour {
                 if (hit.transform.gameObject.layer == floorLayer)
                 {
                     targetPosition = hit.point;
-                    moveOn = true;
-                    Debug.Log(hit.point);
-                    
+                    Debug.Log(targetPosition);
+                    MovePlayer();
                 }
             }
         }
 
-        if(moveOn)
-        {
-            MovePlayer();
-        }
 
      }
 
     private void MovePlayer()
     {
         transform.LookAt(targetPosition);
+        float tempY = transform.localEulerAngles.y;
+        transform.localEulerAngles = new Vector3(0, tempY, 0);
+        navAgent.destination = targetPosition;     
         
     }
 }
