@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class PlayerMovementCube : MonoBehaviour {
 
@@ -20,6 +21,7 @@ public class PlayerMovementCube : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+
         if (!movementOn)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -51,6 +53,7 @@ public class PlayerMovementCube : MonoBehaviour {
         if (movementOn)
         {
             MoveCube();
+            CheckPosition();
         }
 	}
 
@@ -71,9 +74,7 @@ public class PlayerMovementCube : MonoBehaviour {
             case Direction.right: posX = 1; rotZ = -90; break;
             default: Debug.Log("No direction detected!"); break;
         }
-        Vector3 currentRotation = transform.eulerAngles;
-        Debug.Log("Current rotation: " + currentRotation);
-        targetRotation = rigidbody.rotation * Quaternion.Euler(rotX, rotY, rotZ);
+        targetRotation = rigidbody.rotation * Quaternion.Euler(rotX, 0, rotZ);
         targetPosition = rigidbody.position + new Vector3(posX, posY, posZ);
         movementOn = true;
     }
@@ -82,5 +83,19 @@ public class PlayerMovementCube : MonoBehaviour {
     {
         rigidbody.position = Vector3.MoveTowards(rigidbody.position, targetPosition, moveSpeed);
         rigidbody.rotation = Quaternion.Lerp(rigidbody.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+    }
+
+    //CHeck the position of the cube end enable movement as soon as arrived
+    void CheckPosition()
+    {
+        Vector3 currentPosition = rigidbody.position;
+        if ((currentPosition.x > targetPosition.x - 0.08f && currentPosition.x < targetPosition.x + 0.08f) && (currentPosition.z > targetPosition.z - 0.08f && currentPosition.z < targetPosition.z + 0.08f))
+        {
+            Vector3 roundedPosition = new Vector3((int)Math.Round(targetPosition.x,0), targetPosition.y, (int)Math.Round(targetPosition.z, 0));
+            rigidbody.position = roundedPosition;
+            rigidbody.rotation = Quaternion.Euler(0,0,0);
+            movementOn = false;
+            rigidbody.velocity = Vector3.zero;
+        }
     }
 }
