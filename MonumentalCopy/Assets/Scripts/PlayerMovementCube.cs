@@ -14,10 +14,14 @@ public class PlayerMovementCube : MonoBehaviour {
     private Vector3 targetPosition;
     private Quaternion targetRotation;
     private bool falling = false;
-    
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+    //Touch Variables
+    private Vector2 firstPressPosition;
+    private Vector2 secondPressPosition;
+    private Vector2 currentSwipe;
+
+
+    // Update is called once per frame
+    void FixedUpdate () {
         if (!movementOn && !falling)
         {
             CheckControls();
@@ -37,6 +41,7 @@ public class PlayerMovementCube : MonoBehaviour {
 
     void CheckControls()
     {
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             dir = Direction.up;
@@ -61,6 +66,57 @@ public class PlayerMovementCube : MonoBehaviour {
         {
             CalculateMovement();
         }
+#else
+        if(Input.touches.Length > 0)
+        {
+            Touch t = Input.GetTouch(0);
+            if(t.phase == TouchPhase.Began)
+            {    
+                firstPressPosition = new Vector2(t.position.x,t.position.y);
+            }
+            if(t.phase == TouchPhase.Ended)
+            {
+                secondPressPosition = new Vector2(t.position.x,t.position.y);
+
+                //create vector from the two points
+                currentSwipe = new Vector2(secondPressPosition.x - firstPressPosition.x, secondPressPosition.y - firstPressPosition.y);
+               
+                //normalize the 2d vector
+                currentSwipe.Normalize();
+ 
+                //swipe upwards
+                if(currentSwipe.y > 0 && currentSwipe.x > -0.5f && currentSwipe.x < 0.5f)
+                {
+                    dir = Direction.up;
+                    CalculateMovement();
+                }
+                //swipe down
+                if(currentSwipe.y < 0 && currentSwipe.x > -0.5f && currentSwipe.x < 0.5f)
+                {
+                    dir = Direction.down;
+                    CalculateMovement();
+                }
+                //swipe left
+                if(currentSwipe.x < 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
+                {
+                    dir = Direction.left;
+                    CalculateMovement();
+                }
+                //swipe right
+                if(currentSwipe.x > 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
+                {
+                    dir = Direction.right;
+                    CalculateMovement();
+                }
+                //Single press
+                if(currentSwipe.x < 0.5f && currentSwipe.x > -0.5f && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
+                {
+                    dir = Direction.right;
+                    CalculateMovement();
+                }
+            }
+        }
+#endif
     }
 
     void CheckFalling()
