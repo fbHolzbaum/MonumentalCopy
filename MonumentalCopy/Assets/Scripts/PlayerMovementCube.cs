@@ -117,4 +117,11 @@ public class PlayerMovementCube : MonoBehaviour {
             rigidbody.velocity = Vector3.zero;
         }
     }
+
+    public void ResetSettings()
+    {
+        movementOn = false;
+        falling = false;
+        rigidbody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
+    }
 }
