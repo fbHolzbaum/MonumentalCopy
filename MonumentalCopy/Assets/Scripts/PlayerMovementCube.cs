@@ -111,7 +111,6 @@ public class PlayerMovementCube : MonoBehaviour {
                 //Single press
                 if(currentSwipe.x < 0.5f && currentSwipe.x > -0.5f && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
                 {
-                    dir = Direction.right;
                     CalculateMovement();
                 }
             }
